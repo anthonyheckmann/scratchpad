@@ -1,14 +1,9 @@
-import { AppPage } from './app.po';
+import { AppPage, AppHeader } from './app.po';
 
-describe('collabpad App', () => {
-  let page: AppPage;
+describe('collabpad layout', () => {
 
-  beforeEach(() => {
-    page = new AppPage();
-  });
-
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+  it('should display the app title', async () => {
+    await AppPage.navigateTo();
+    await expect(AppHeader.getTitleText()).toEqual('CollabPad');
   });
 });
