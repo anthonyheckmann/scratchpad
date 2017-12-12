@@ -11,3 +11,13 @@ export class AppHeader {
     return element(by.css('app-root .app-title')).getText();
   }
 }
+
+export class AppEditor {
+  static edit(text: string) {
+    return element(by.css('app-root .app-editor [contenteditable=true]')).sendKeys(text);
+  }
+
+  static get() {
+    return element(by.css('app-root .app-editor [contenteditable=true]')).getText();
+  }
+}
