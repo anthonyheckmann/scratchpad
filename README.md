@@ -1,5 +1,11 @@
 # Collabpad
 
+## Dependencies
+
+- [Github Corners](https://github.com/tholman/github-corners)
+
+## Angular CLI
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
 
 ## Development server
