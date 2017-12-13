@@ -27,6 +27,9 @@
     </nav>
   </div>
   <div class="card-body p-0 border-0">
-    <app-ngx-editor class="app-editor" height="75vh"></app-ngx-editor>
+    <app-ngx-editor class="app-editor"
+                    height="75vh"
+                    [ngModel]="data$ | async"
+                    (ngModelChange)="onModelChange($event)"></app-ngx-editor>
   </div>
 </div>
