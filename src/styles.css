@@ -4,6 +4,7 @@
   border: 0 !important;
   border-bottom: 1px solid #ddd !important;
   background-color: rgba(0,0,0,.03) !important;
+  text-align: center !important;
 }
 
 .ngx-editor-textarea {

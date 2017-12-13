@@ -14,10 +14,10 @@ export class AppHeader {
 
 export class AppEditor {
   static edit(text: string) {
-    return element(by.css('app-root .app-editor [contenteditable=true]')).sendKeys(text);
+    return element(by.css('app-root .app-editor [contenteditable]')).sendKeys(text);
   }
 
   static get() {
-    return element(by.css('app-root .app-editor [contenteditable=true]')).getText();
+    return element(by.css('app-root .app-editor [contenteditable]')).getText();
   }
 }
