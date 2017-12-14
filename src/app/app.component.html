@@ -15,21 +15,18 @@
   <div class="card-header border-bottom-0 py-1">
     <nav class="nav">
       <div class="nav-link mr-auto" fxLayout="row" fxLayoutAlign="center center">
-        <span class="mr-1 app-title">
-          CollabPad
+        <span class="app-title">
+          Scratchpad
         </span>
-        <span class="badge badge-secondary">4</span>
       </div>
 
       <div class="nav-link">
-        <button type="button" class="btn btn-primary btn-sm">New Pad</button>
+        <a class="btn btn-primary btn-sm" target="_blank" href="/">New Pad</a>
       </div>
     </nav>
   </div>
   <div class="card-body p-0 border-0">
     <app-ngx-editor class="app-editor"
-                    height="75vh"
-                    [ngModel]="data$ | async"
-                    (ngModelChange)="onModelChange($event)"></app-ngx-editor>
+                    height="75vh"></app-ngx-editor>
   </div>
 </div>

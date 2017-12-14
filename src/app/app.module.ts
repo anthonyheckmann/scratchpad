@@ -4,10 +4,8 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxEditorModule } from 'ngx-editor';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { ApiService } from './api.service';
 
 import { AppComponent } from './app.component';
-
 
 @NgModule({
   declarations: [
@@ -20,7 +18,7 @@ import { AppComponent } from './app.component';
     FlexLayoutModule,
     FormsModule
   ],
-  providers: [ApiService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
